@@ -37,9 +37,11 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    GreetingImage(message = stringResource(R.string.happy_birthday_kim),
-                        from = "From Emma",
-                        modifier = Modifier.padding(8.dp))
+                    GreetingImage(
+                        message = stringResource(R.string.happy_birthday_kim),
+                        from = stringResource(R.string.from_emma),
+                        modifier = Modifier.padding(8.dp)
+                    )
                 }
             }
         }
